@@ -1,7 +1,3 @@
-Certainly, here's a detailed README file for your project:
-
----
-
 # Olympics Data Analysis Project
 
 ## Table of Contents
@@ -48,39 +44,10 @@ Before setting up and running the project, ensure you have the following prerequ
 - Azure Data Factory (for pipeline execution)
 - Power BI (for real-time dashboard)
 
-## Setup
-
-To run this project on your local machine, follow these steps:
-
-1. Clone the GitHub repository:
-
-   ```bash
-   git clone <repository_url>
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd OlympicsDataAnalysis
-   ```
-
-3. Create a virtual environment (recommended):
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-4. Install project dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-5. Explore the project components, including notebooks in the `notebooks/` folder and scripts in the `scripts/` folder.
+ Explore the project components, including notebooks in the `notebooks/` folder and scripts in the `scripts/` folder.
 
 ## Azure Data Factory Pipeline
-
+![Architecture](architecture.png)
 The core of this project is the Azure Data Factory (ADF) pipeline, which orchestrates the data processing workflow. Here's a detailed breakdown of how it works:
 
 ### Data Ingestion
@@ -103,7 +70,7 @@ The core of this project is the Azure Data Factory (ADF) pipeline, which orchest
 
 ### Output Generation
 
-- Filtered data is saved as CSV files in the `processed data` folder within Azure Data Lake Storage. File names follow the pattern `{year}_olympic_data.csv`.
+- Filtered data is saved as CSV files in the `partitioned data` folder within Azure Data Lake Storage. File names follow the pattern `{year}_olympic_data.csv`.
 
 - Transformed data is stored as Excel files in the `transformed data` folder within Azure Data Lake Storage. File names follow the pattern `{year}_olympics_reports.xlsx`.
 
