@@ -5,7 +5,6 @@
 - [Overview](#overview)
 - [Project Structure](#project-structure)
 - [Prerequisites](#prerequisites)
-- [Setup](#setup)
 - [Azure Data Factory Pipeline](#azure-data-factory-pipeline)
   - [Data Ingestion](#data-ingestion)
   - [ForEach Activity](#foreach-activity)
@@ -14,7 +13,6 @@
   - [Real-time Power BI Dashboard](#real-time-power-bi-dashboard)
   - [Waiting Period](#waiting-period)
 - [Data History and Scope](#data-history-and-scope)
-- [License](#license)
 
 ## Overview
 
